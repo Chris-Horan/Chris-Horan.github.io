@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+header {
+    background: #444444;
+    height: 80px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+header a {
+    color: #BBBBBB;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    vertical-align: -webkit-baseline-middle;
+    line-height: 80px;
+    transition: 1s;
+}
+
+header a:hover {
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+nav {
+    margin-right: 8%;
+    height: 80px;
+}
+
+#logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#homeLink {
+    border-radius: 30px;
+}
