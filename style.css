@@ -8,6 +8,10 @@ header {
     height: 80px;
     font-size: 1.5em;
     text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 header a {
@@ -26,7 +30,7 @@ header a:hover {
 }
 
 nav {
-    margin-right: 8%;
+    margin-right: 4%;
     height: 80px;
 }
 
@@ -39,3 +43,69 @@ nav {
 #homeLink {
     border-radius: 30px;
 }
+
+#div1 { 
+    background: url(images/leaves.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(68, 68, 68, 0.7);
+    margin-top: 80px;
+    height: 85%;
+    width: 100%;
+    position: relative;
+}
+
+#div1 h1{
+    color: #FFFFFF;
+    font-size: 4em;
+    text-align: center;
+}
+
+#div1 h2{
+    color: #EEEEEE;
+    font-size: 3em;
+    text-align: center;
+}
+
+#arrows {
+    margin-top: 350px;
+}
+
+#textBox1 {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    position: fixed;
+    top: 20%;
+    text-align: center;
+}
+
+#div2 { 
+    background: url(images/stone.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 80%;
+}
+
+#block2 {
+    background: #555555;
+    height: 100%;
+    width: 60%;
+    float: right;
+}
+
+.show h1, .show h2{
+    transition: 0.5s;
+}
+
+.hide h1, .hide h2{
+    color: rgba(0,0,0,0) !important;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 10px){}
