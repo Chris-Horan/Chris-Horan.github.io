@@ -44,13 +44,43 @@
             <div id="block4">
                 <div id="textBox4">
                     <h1>Contact</h1>
-                    <form action="mailto:chris.horan27@gmail.com" method="POST">
-                        Name: <input type="text" name="name" required><br>
-                        Email: <input type="text" name="email" required><br>
-                        Question or Comment:
-                        <textarea type="text" name="comment" rows="6" cols="60">text</textarea><br><br>
-                        <input type="submit" value="Submit">
-                    </form>
+                    <?php
+                        //if "email" variable is filled out, send email
+                        if (isset($_REQUEST['email']))  {
+                        
+                        //Email information
+                        $admin_email = "chris.horan27@gmail.com";
+                        $email = $_REQUEST['email'];
+                        $subject = $_REQUEST['subject'];
+                        $comment = $_REQUEST['comment'];
+                        
+                        //send email
+                        mail($admin_email, "$subject", $comment, "From:" . $email);
+                        
+                        //Email response
+                        echo "Thank you for contacting us!";
+                        }
+                        
+                        //if "email" variable is not filled out, display the form
+                        else  {
+                        ?>
+
+                        <form method="post">
+
+                        Email: <input name="email" type="text" />
+
+                        Subject: <input name="subject" type="text" />
+
+                        Message:
+
+                        <textarea name="comment" rows="15" cols="40"></textarea>
+
+                        <input type="submit" value="Submit" />
+                        </form>
+                        
+                        <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>
