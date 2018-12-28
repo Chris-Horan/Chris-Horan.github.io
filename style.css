@@ -192,6 +192,12 @@ nav {
     transition: 0.5s;
 }
 
+footer {
+    background: #444444;
+    height: 20%;
+    width: 100%;
+}
+
 .show h1, .show h2{
     transition: 0.5s;
 }
@@ -199,6 +205,11 @@ nav {
 .hide, .hide h1, .hide h2{
     color: rgba(0,0,0,0) !important;
     transition: 0.5s;
+}
+
+.disappear {
+    top: -300px !important;
+    transition-delay: 1s;
 }
 
 ::selection {
