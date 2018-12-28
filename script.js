@@ -9,7 +9,7 @@ window.addEventListener("scroll", function() {
 function scrollAdjust() {
     var fromTop = window.pageYOffset;
     var height = window.innerHeight;
-    if(fromTop > height*0.125) {
+    if(fromTop > height*0.15) {
         textBox1.className = "hide disappear";
     } else textBox1.className = "show";
     if(fromTop > height*0.3 && fromTop < height*0.3+900) {
