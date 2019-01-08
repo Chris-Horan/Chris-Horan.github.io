@@ -19,6 +19,6 @@ function scrollAdjust() {
         text3.className = "show";
     } else text3.className = "hide";
     if(fromTop > height*0.3+1700 && fromTop < height*0.3+2500) {
-        text4.className = "show";
-    } else text4.className = "hide";
+        textBox4.className = "show";
+    } else textBox4.className = "hide";
 }
