@@ -97,13 +97,16 @@ nav {
 }
 
 #textBox2 {
-    margin-right: 10%;
+    margin-right: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
 }
 
 #text2{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
+    margin-left: 10%;
 }
 
 #textBox2 h1 {
@@ -114,7 +117,7 @@ nav {
 
 #textBox2 h2{
     color: #444444;
-    font-size: 1.7em;
+    font-size: 1.3em;
     text-align: right;
     transition: 0.5s;
     line-height: 1.3em;
