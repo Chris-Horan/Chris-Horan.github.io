@@ -167,6 +167,8 @@ nav {
     font-size: 1.5em;
     transition: 0.3s;
     padding: 0;
+    display: block;
+    margin-bottom: 20px;
 }
 
 #text3 a:hover {
